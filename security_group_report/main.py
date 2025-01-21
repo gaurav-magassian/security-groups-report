@@ -21,7 +21,7 @@ ec2 = boto3.client("ec2")
 # run for every region
 regions = [region["RegionName"] for region in ec2.describe_regions()["Regions"]]
 # specify regions
-# regions = ['eu-west-1','us-west-1]
+# regions = ['eu-west-1','us-west-1']
 
 # Get rules from SG
 
